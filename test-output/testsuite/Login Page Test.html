@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>TestNG:  Login Page Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Page Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 22:00:39 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37389 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankPageTest.bankManagerShouldOpenAccountSuccessfully()'><b>bankManagerShouldOpenAccountSuccessfully</b><br>Test class: com.bank.testsuite.BankPageTest<br/>
+<a href="#Output-1590481849" onClick='toggleBox("Output-1590481849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1590481849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1590481849">
+clickOnBankManagerLoginTab[[ChromeDriver: chrome on WINDOWS (a93b1094503bd7c84169dea3ae90263a)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br/>
+clickOnOpenAccountTab[[ChromeDriver: chrome on WINDOWS (a93b1094503bd7c84169dea3ae90263a)] -> xpath: //button[contains(text(),'Open Account')]]<br/>
+selectCustomerCreatedInFirstTest[[ChromeDriver: chrome on WINDOWS (a93b1094503bd7c84169dea3ae90263a)] -> name: userSelect]<br/>
+selectCurrency[[ChromeDriver: chrome on WINDOWS (a93b1094503bd7c84169dea3ae90263a)] -> id: currency]<br/>
+clickOnProcessButton[[ChromeDriver: chrome on WINDOWS (a93b1094503bd7c84169dea3ae90263a)] -> xpath: //button[contains(text(),'Process')]]<br/>
+popUpDisplay<br/>
+verifyAndGetAlertText<br/>
+clickOnOkButtonOnPopup<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankPageTest.customerShouldLoginAndLogoutSuccessfully()'><b>customerShouldLoginAndLogoutSuccessfully</b><br>Test class: com.bank.testsuite.BankPageTest<br/>
+<a href="#Output-1145165159" onClick='toggleBox("Output-1145165159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1145165159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1145165159">
+clickOnCustomerLoginTab[[ChromeDriver: chrome on WINDOWS (2019295eaa18c983b2d27de1ce0078c4)] -> xpath: //button[contains(text(),'Customer Login')]]<br/>
+selectCustomerYouCreated[[ChromeDriver: chrome on WINDOWS (2019295eaa18c983b2d27de1ce0078c4)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLoginButton[[ChromeDriver: chrome on WINDOWS (2019295eaa18c983b2d27de1ce0078c4)] -> xpath: //button[contains(text(),'Login')]]<br/>
+clickOnLogoutButton[[ChromeDriver: chrome on WINDOWS (2019295eaa18c983b2d27de1ce0078c4)] -> xpath: //button[@class='btn logout']]<br/>
+verifyYourNameTextDisplayed[[ChromeDriver: chrome on WINDOWS (2019295eaa18c983b2d27de1ce0078c4)] -> xpath: //label[contains(text(),'Your Name :')]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankPageTest.bankManagerShouldAddCustomerSuccessfully()'><b>bankManagerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankPageTest<br/>
+<a href="#Output-571956559" onClick='toggleBox("Output-571956559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-571956559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-571956559">
+clickOnBankManagerLoginTab[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br/>
+clickOnAddCustomerTab[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //button[contains(text(),'Add Customer')]]<br/>
+enterTextInFirstNameField[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //input[@placeholder='First Name']]<br/>
+enterTextInLastNameField[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //input[@placeholder='Last Name']]<br/>
+enterTextInPostcodeField[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //input[@placeholder='Post Code']]<br/>
+clickOnAddCustomerButton[[ChromeDriver: chrome on WINDOWS (6e68cfabc53255cc0cd536ac7c70c441)] -> xpath: //button[@type='submit' and contains(text(),'Add Customer')]]<br/>
+popUpDisplay<br/>
+verifyAlertText<br/>
+clickOnOkButtonOnPopup<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankPageTest.customerShouldDepositMoneySuccessfully()'><b>customerShouldDepositMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankPageTest<br/>
+<a href="#Output-734971558" onClick='toggleBox("Output-734971558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-734971558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-734971558">
+clickOnCustomerLoginTab[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //button[contains(text(),'Customer Login')]]<br/>
+selectCustomerYouCreated[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLoginButton[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //button[contains(text(),'Login')]]<br/>
+clickOnDepositButton[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //button[contains(text(),'Deposit')]]<br/>
+enterAmount1000toAmountField[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //input[@placeholder='amount']]<br/>
+click On DepositButton2[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //div[1]/form[1]/button[1]]<br/>
+verifyDepositSuccessfulText[[ChromeDriver: chrome on WINDOWS (a2ad43abcbd03a31dd32d8d40edb9ef5)] -> xpath: //span[contains(text(),'Deposit Successful')]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankPageTest.customerShouldWithdrawMoneySuccessfully()'><b>customerShouldWithdrawMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankPageTest<br/>
+<a href="#Output-273041802" onClick='toggleBox("Output-273041802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273041802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273041802">
+clickOnCustomerLoginTab[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //button[contains(text(),'Customer Login')]]<br/>
+selectCustomerYouCreated[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLoginButton[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //button[contains(text(),'Login')]]<br/>
+clickOnDepositButton[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //button[contains(text(),'Deposit')]]<br/>
+enterAmount1000toAmountField[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //input[@placeholder='amount']]<br/>
+click On DepositButton2[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //div[1]/form[1]/button[1]]<br/>
+clickOnWithDrawlButton[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //button[contains(text(),'Withdrawl')]]<br/>
+enterAmount50toAmountField[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //input[@type='number']]<br/>
+clickOnWithDrawButton[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //button[contains(text(),'Withdraw')and@type='submit']]<br/>
+verifyTransactionSuccessfulText[[ChromeDriver: chrome on WINDOWS (0e53f245f4013a95c09f4c918ea358ec)] -> xpath: //span[contains(text(),'Transaction successful')]]<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.bank.testsuite.BankPageTest@1786f9d5</td></tr>
+</table><p>
+</body>
+</html>
